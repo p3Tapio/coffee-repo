@@ -1,0 +1,31 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "set NODE_ENV=test&& jest --verbose --forceExit",
+    "start": "node index.js",
+    "coffee": "concurrently \"nodemon index.js\" \"cd ../front&&npm start\"",
+    "install:front": "cd ../front&&npm install",
+    "install:all": "npm install && npm run install:front"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "cross-env": "^7.0.3",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

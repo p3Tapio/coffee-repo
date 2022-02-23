@@ -1,0 +1,15 @@
+.mainContainer {
+  margin:  0;
+  padding: 20px 20px 200px 20px;
+  background-color: white;
+  box-shadow: -3px 4px 13px -5px rgba(93, 90, 108, 0.75);
+}
+
+@media screen and (min-width:992px) {
+  .mainContainer {
+    margin:5vh 20vw 5vh 20vw;
+  }
+}
+.formMarginBottom {
+  margin-bottom: 10px;
+}
